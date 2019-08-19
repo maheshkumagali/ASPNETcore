@@ -66,4 +66,6 @@ C:\Users\Mahesh\source\repos\ASPNETcore\obj\Debug\netcoreapp2.1\TagHelpersDemo.V
 C:\Users\Mahesh\source\repos\ASPNETcore\obj\Debug\netcoreapp2.1\TagHelpersDemo.dll
 C:\Users\Mahesh\source\repos\ASPNETcore\obj\Debug\netcoreapp2.1\TagHelpersDemo.pdb
 C:\Users\Mahesh\source\repos\ASPNETcore\obj\Debug\netcoreapp2.1\TagHelpersDemo.csproj.CopyComplete
-C:\Users\Mahesh\source\repos\ASPNETcore\obj\Debug\netcoreapp2.1\Razor\Views\CustomTagHelperView\Index.g.cshtml.cs
+C:\Users\Mahesh\source\repos\ASPNETcore\obj\Debug\netcoreapp2.1\Razor\Views\CustomTagHelpers\Index.g.cshtml.cs
+C:\Users\Mahesh\source\repos\ASPNETcore\obj\Debug\netcoreapp2.1\Razor\Views\ToDo\Index.g.cshtml.cs
+C:\Users\Mahesh\source\repos\ASPNETcore\obj\Debug\netcoreapp2.1\Razor\Views\ToDo\Components\PriorityList\Default.g.cshtml.cs

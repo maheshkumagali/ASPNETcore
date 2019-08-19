@@ -1,0 +1,15 @@
+﻿@using TagHelpersDemo.Models
+@addTagHelper *, TagHelpersDemo
+@model IEnumerable<TodoItem>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <vc:priority-list max-priority="1" is-done="false">
+    </vc:priority-list>
+</div>
+
