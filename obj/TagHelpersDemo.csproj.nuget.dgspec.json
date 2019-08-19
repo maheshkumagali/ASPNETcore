@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mahesh\\source\\repos\\ASPNETcore\\TagHelpersDemo.csproj": {}
+    "C:\\Users\\Mahesh\\source\\repos\\Session\\ASPNETcore\\TagHelpersDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mahesh\\source\\repos\\ASPNETcore\\TagHelpersDemo.csproj": {
+    "C:\\Users\\Mahesh\\source\\repos\\Session\\ASPNETcore\\TagHelpersDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mahesh\\source\\repos\\ASPNETcore\\TagHelpersDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Mahesh\\source\\repos\\Session\\ASPNETcore\\TagHelpersDemo.csproj",
         "projectName": "TagHelpersDemo",
-        "projectPath": "C:\\Users\\Mahesh\\source\\repos\\ASPNETcore\\TagHelpersDemo.csproj",
+        "projectPath": "C:\\Users\\Mahesh\\source\\repos\\Session\\ASPNETcore\\TagHelpersDemo.csproj",
         "packagesPath": "C:\\Users\\Mahesh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mahesh\\source\\repos\\ASPNETcore\\obj\\",
+        "outputPath": "C:\\Users\\Mahesh\\source\\repos\\Session\\ASPNETcore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

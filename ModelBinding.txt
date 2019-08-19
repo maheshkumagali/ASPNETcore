@@ -1,0 +1,99 @@
+- Model binding “binds” posted data to the data model exposed by the controller’s method signature.
+
+- The list of bindable values includes querystring values, form data and route values.
+
+- Type matching is very important when it comes to model binding. [Even if you use a try/catch block to wrap the entire body of the method when there is a type mismatch, it won’t work.]
+
+ 
+
+Basic:
+
+ 
+
+public class HomeController : Controller
+
+{
+
+    // Arguments in the signature are both nullable so no exceptions are
+
+    // thrown during preliminaries of the method execution.
+
+    public ActionResult Index(int? customerId, string name, int code = 0)
+
+    {
+
+       var id = 0;
+
+       if (customerId.HasValue)
+
+           id = customerId.Value;
+
+       ...
+
+    }
+
+    ...
+
+}
+
+ 
+
+Using Complex Data Types:
+
+[HttpPost]
+
+[ActionName("Save")]
+
+public class CustomerController : Controller
+
+{
+
+    public ActionResult SaveCustomer(Customer customer)
+
+    {
+
+       // ASP.NET MVC model binding ensures that, under proper conditions,
+
+       // the Customer object is built for you from posted data.
+
+       ...
+
+    }
+
+}
+
+ 
+
+- It is required that the bound complex type features a parameter-less constructor.
+
+- All bindable members of the bound data type must have public get/set accessors. 
+
+ 
+
+ 
+
+ 
+
+    [BindRequired]: If binding cannot happen, this attribute adds a ModelState error.
+
+    [BindNever]: Tells the model binder to ignore this parameter.
+
+    [FromHeader]: Forces binding from the HTTP request header.
+
+    [FromQuery]: Forces binding from the URL's query string.
+
+    [FromServices]: Binds the parameter from services provided by dependency injection.
+
+    [FromRoute]: Forces binding from values provided by Routing.
+
+    [FromForm]: Forces binding from values in the FORM.
+
+    [FromBody]: Forces binding from values in the body of the HTTP request.
+
+ 
+
+====================================================================================================================================================================================================
+
+- The View Engine is responsible for producing an HTML response when invoked by the Controller Action method.
+
+- The Razor makes it easier to embed the C# code inside the HTML, thus providing the ability to generate the dynamic response.

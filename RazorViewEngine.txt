@@ -1,0 +1,37 @@
+RAZOR View ENGINE
+
+In ASP.NET MVC application, all incoming browser requests are handled by the controller and these requests are mapped to the controller actions.
+ 
+ A controller action might return a view or it might also perform some other type of action such as redirecting to another controller action.
+ 
+ With the MVC framework, the most popular method for creating HTML is to use the Razor view engine of ASP.NET MVC.
+ 
+ To use this view engine, a controller action produces a ViewResult object, and a ViewResult can carry the name of the Razor view that we want to use.
+ 
+ The view will be a file on the file system and the ViewResult can also carry along a model object to the view and the view can use this model object when it creates the HTML.
+
+When the MVC framework sees that your controller action produces a ViewResult, the framework will find the view on the file system, execute the view, which produces HTML, and it is this HTML which the framework sends back to the client.
+
+ public ViewResult Index() { 
+         var employee = new Employee { ID = 1, Name = "Mark Upston"}; 
+         return View(employee); 
+      }
+	  
+	  
+	  
+<html xmlns = "http://www.w3.org/1999/xhtml"> 
+   <head> 
+      <title>Home</title> 
+   </head> 
+   
+   <body> 
+      <h1>Welcome!</h1> 
+      
+      <div> 
+         @Model.Name 
+      </div> 
+   </body> 
+</html> 
+
+
+==================================================================================================================================================================
